@@ -16,6 +16,10 @@ f = open(os.path.join(path, readme), "w")
 f.write("# " + name)
 f.close()
 
+gitignore = ".gitignore"
+f = open(os.path.join(path, gitignore), "w")
+f.close()
+
 # Creating git repo
 os.chdir(path)
 os.system("git init")

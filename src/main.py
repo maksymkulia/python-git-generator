@@ -20,6 +20,10 @@ gitignore = ".gitignore"
 f = open(os.path.join(path, gitignore), "w")
 f.close()
 
+license = "LICENSE"
+f = open(os.path.join(path, license), "w")
+f.close()
+
 # Creating git repo
 os.chdir(path)
 os.system("git init")
